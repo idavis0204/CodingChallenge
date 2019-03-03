@@ -11,7 +11,7 @@ to both elements. secondDiv is declares last, so is place at the front.
 JS: document.getElementById("firstDiv").style["background"] = "Pink";
 JQuery: $("#firstDiv").css({"background": "Pink"});
 
-2. How would you dynamically target secondDiv and add the yellow-card class to its class list? (provide the code snippet)
+3. How would you dynamically target secondDiv and add the yellow-card class to its class list? (provide the code snippet)
 
 JS: document.getElementById("firstDiv").className += " yellow-card";
 JQuery: $("#firstDiv").addClass("yellow-card");
