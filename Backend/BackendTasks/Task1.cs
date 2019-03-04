@@ -14,14 +14,16 @@ namespace Backend
         }
 
         /// <summary>
-        /// Method to generate 'Stack Overflow' string for the provided input string based whether its length is divisble by the provided divisors.
+        /// Method to generate 'Stack Overflow' string for the provided input string based whether its length is divisble
+        /// by the provided divisors.
         /// Only divisible by first divisor returns "Stack"
         /// Only divisible by second divisor returns "Overflow"
         /// Divisible by both returns "Stack Overflow!"
         /// 
-        /// NOTE: Task specified hardcoding 2 and 4 as divisors but you'll never get a number divisable by four that isn't also divisable by 2 
-        ///       As such, in that scenario the "Overflow" option is redundant as you'll never have an input string that will produce that result
-        ///       Therefore, I made the method more generic such that it can produce the "Overflow" result if appropriate divisors are provided. e.g. 2 and 3
+        /// NOTE: Task specified hardcoding 2 and 4 as divisors but you'll never get a number divisable by four that isn't 
+        ///       also divisable by 2. As such, in that scenario the "Overflow" option is redundant as you'll never have 
+        ///       an input string that will produce that result. Therefore, I made the method more generic such that it can 
+        ///       produce the "Overflow" result if appropriate divisors are provided. e.g. 2 and 3
         ///       
         /// </summary>
         /// <param name="inputString"></param>
