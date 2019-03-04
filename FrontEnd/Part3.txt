@@ -12,20 +12,24 @@ stretching the width of the screen to make them larger and easier to read on a m
 
 You can use multiple media queries with distinct breakpoints if you want to cater for screen sizes (e.g. phone, tablet and desktop)
 
-Another option is to query the user agent to check if the user is accessing the page using a known mobile device and if so, then taking action such as to apply a mobile friendly styles or direct the user to mobile friendly version of the page.
+Another option is to query the user agent to check if the user is accessing the page using a known mobile device and if so, then taking 
+action such as to apply a mobile friendly styles or direct the user to mobile friendly version of the page.
 
 if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i))
 {
     window.location = "https://m.yourpage.co.za";
 }
 
-This method does have it's downsides in that you need to specifiy all the mobile browsers you want included in the check. For example, the check I wrote above is limitted to detecting Android, WebOS and iPhone devices. Overtime user agent strings might get changed or new ones are created and you'll need update you check to cater which adds maintanance overhead. 
+This method does have it's downsides in that you need to specifiy all the mobile browsers you want included in the check. 
+For example, the check I wrote above is limitted to detecting Android, WebOS and iPhone devices. Overtime user agent strings might get
+changed or new ones are created and you'll need update you check to cater which adds maintanance overhead. 
 
 
 
 2. What is the benefit of bundling .js scripts into one file?
 
-This enables clients to retrieve all required javascript in a single request to the server. Having multiple files would require making multiple requests to retrieve each file individually which could negatively impact performance, particularly on high volume site. 
+This enables clients to retrieve all required javascript in a single request to the server. Having multiple files would require 
+making multiple requests to retrieve each file individually which could negatively impact performance, particularly on high volume site. 
 
 
 
@@ -41,7 +45,8 @@ The --watch keyword instructs sass to monitor the .scss file and recompile the c
 
 4. What should be done to ensure browser compatibility with newer flavours of JavaScript like ES6/7?
 
-You can use feature detection to determine if the browser supports a given feature of a new version of javascript. For example, if you want to detect if the browser supports arrow fucntions, you could create a function such as the below:
+You can use feature detection to determine if the browser supports a given feature of a new version of javascript. For example, 
+if you want to detect if the browser supports arrow fucntions, you could create a function such as the below:
 
 function canSupportArrowFunctions()
 {
