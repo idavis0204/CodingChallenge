@@ -4,7 +4,7 @@
 
 // JS: 
 
-function GetDestinationArray(data) {
+function getDestinationArray(data) {
   var destinations = [];
 
   for (var item in data) 
@@ -17,7 +17,7 @@ function GetDestinationArray(data) {
 
 // JQuery: 
 
-function GetDestinationArray(data) {
+function getDestinationArray(data) {
    var destinations = [];
 
    $.each(data, function(index, item) {
@@ -27,14 +27,14 @@ function GetDestinationArray(data) {
 
 // 2. Given the same data array, process the array again this time returning only the destination objects where the holidayRanking > 4.
 
-function IsHighRankingDestination(destination)
+function isHighRankingDestination(destination)
 {
    return destination.holidayRanking > 4;
 }
 
-function GetHighRankingDestinations()
+function getHighRankingDestinations()
 {
-   return data.filter(IsHighRankingDestination);
+   return data.filter(isHighRankingDestination);
 }
 
 // 3.Extend your solution to problem 2 to return an array of holiday rankings where holidayRanking > 4 then sum all the holiday rankings
@@ -44,9 +44,9 @@ function add(sum, item)
     return sum + item['holidayRanking'];
 }
 
-function GetSumOfHighRankingDestinationRankings()
+function getSumOfHighRankingDestinationRankings()
 {
-    var highRankingDestinations = GetHighRankingDestinations();
+    var highRankingDestinations = getHighRankingDestinations();
     return highRankingDestinations.reduce(add, 0); 
 }
 
@@ -73,7 +73,8 @@ function compareIt(num1, num2)
 
 // 1. Why will the function be parsed correctly?
 
-// Javascript does not enforce unique variable names. Thus when a new variable is declared with the same name as an existing variable, the new variable will overwrite the existing variable.
+// Javascript does not enforce unique variable names by default. Thus when a new variable is declared with the same name as an existing 
+// variable, the new variable will overwrite the existing variable.
 
 // 2. How could you introduce a stricter syntax to variable/function declaration and avoid this behaviour?
 
