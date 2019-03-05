@@ -8,7 +8,7 @@ namespace BackendTests
     public class Task3Tests
     {
         [Test]
-        public void FactoryReturnCorrectObjectTypeForCarProductType()
+        public void FactoryReturnsCorrectObjectTypeForCarProductType()
         {
             var factory = new Factory();
             var productType = ProductType.Car;
@@ -20,7 +20,7 @@ namespace BackendTests
         }
 
         [Test]
-        public void FactoryReturnCorrectObjectTypeForRobotProductType()
+        public void FactoryReturnsCorrectObjectTypeForRobotProductType()
         {
             var factory = new Factory();
             var productType = ProductType.Robot;

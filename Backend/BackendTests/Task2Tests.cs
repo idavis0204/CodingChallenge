@@ -34,9 +34,9 @@ namespace BackendTests
         public void SingleNameArrayReturnsOneLike()
         {
             var expectedString = "Peter likes this";
-            var emptyNameList = new List<string>() { "Peter" };
+            var nameList = new List<string>() { "Peter" };
 
-            var actualString = Task2.GenerateLikesString(emptyNameList);
+            var actualString = Task2.GenerateLikesString(nameList);
 
             Assert.AreEqual(expectedString, actualString);
         }
@@ -45,9 +45,9 @@ namespace BackendTests
         public void TwoNameArrayReturnsTwoLikes()
         {
             var expectedString = "Jacob and Alex like this";
-            var emptyNameList = new List<string>() { "Jacob", "Alex" };
+            var nameList = new List<string>() { "Jacob", "Alex" };
 
-            var actualString = Task2.GenerateLikesString(emptyNameList);
+            var actualString = Task2.GenerateLikesString(nameList);
 
             Assert.AreEqual(expectedString, actualString);
         }
@@ -56,9 +56,9 @@ namespace BackendTests
         public void ThreeNameArrayReturnsThreeLikes()
         {
             var expectedString = "Max, John and Mark like this";
-            var emptyNameList = new List<string>() { "Max", "John", "Mark" };
+            var nameList = new List<string>() { "Max", "John", "Mark" };
 
-            var actualString = Task2.GenerateLikesString(emptyNameList);
+            var actualString = Task2.GenerateLikesString(nameList);
 
             Assert.AreEqual(expectedString, actualString);
         }
@@ -67,9 +67,9 @@ namespace BackendTests
         public void FiveNameArrayReturnsTwoPlusLikes()
         {
             var expectedString = "Alex, Jacob and 3 others like this";
-            var emptyNameList = new List<string>() { "Alex", "Jacob", "Mark", "Max", "Iain" };
+            var nameList = new List<string>() { "Alex", "Jacob", "Mark", "Max", "Iain" };
 
-            var actualString = Task2.GenerateLikesString(emptyNameList);
+            var actualString = Task2.GenerateLikesString(nameList);
 
             Assert.AreEqual(expectedString, actualString);
         }
