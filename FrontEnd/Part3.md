@@ -1,4 +1,4 @@
-##### 1. How would you make a web page mobile friendly (i.e responsive)?
+#### 1. How would you make a web page mobile friendly (i.e responsive)?
 
 One could use media queries with breakpoints to apply specific css styles based on the current screen size.
 
@@ -30,14 +30,14 @@ changed or new ones are created and you'll need update you check to cater which 
 
 
 
-##### 2. What is the benefit of bundling .js scripts into one file?
+#### 2. What is the benefit of bundling .js scripts into one file?
 
 This enables clients to retrieve all required javascript in a single request to the server. Having multiple files would require 
 making multiple requests to retrieve each file individually which could negatively impact performance, particularly on high volume site. 
 
 
 
-##### 3. What needs to be done to ensure the browser understands Sass styling?
+#### 3. What needs to be done to ensure the browser understands Sass styling?
 
 The sass .scss style sheet needs to compiled into a css style sheet. This can be done by running a command such as the one below:
 
@@ -49,7 +49,7 @@ The --watch keyword instructs sass to monitor the .scss file and recompile the c
 
 
 
-##### 4. What should be done to ensure browser compatibility with newer flavours of JavaScript like ES6/7?
+#### 4. What should be done to ensure browser compatibility with newer flavours of JavaScript like ES6/7?
 
 You can use feature detection to determine if the browser supports a given feature of a new version of javascript. For example, 
 if you want to detect if the browser supports arrow fucntions, you could create a function such as the below:
