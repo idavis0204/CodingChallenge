@@ -4,7 +4,7 @@ using static BackendConsoleApp.Factory;
 
 namespace BackendConsoleApp
 {
-    // NOTE: In a real world scenario, I would like move each class defined here into its own separate file for improved maintainability.
+    // NOTE: In a real world scenario, I would likely move each class defined here into its own separate file for improved maintainability.
     //       I've kept them all in one class here for ease of reference.
 
     /// <summary>
@@ -139,7 +139,7 @@ namespace BackendConsoleApp
         }
     }
 
-    // Skeleton classes or service realted object to enable code to build, no actual implementation
+    // Skeleton classes for service realted objects to enable code to build, no actual implementation
     #region Services
     public class Parts
     {
